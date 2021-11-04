@@ -1,0 +1,13 @@
+How to use Namecoins to register .bit domains
+.bit
+
+is the first and only TLD of the so-called Domain 2.0 namespace. The actions necessary to register a new domain or to update an existing one are built into the Namecoin protocol by means of the new transaction types mentioned above.
+
+There are three types of Namecoin transaction (source):
+
+name_new – Registration cost 0.01 NMC. This constitutes a fixed cost pre-order of a domain.
+name_firstupdate – Registration cost 0 NMC. Registers a domain making it publically visible, subject to variable costs (price calculator).
+name_update – Registration cost 0 NMC. This is used for updating, renewing or transferring a domain.
+All NMC transactions are subject to a 0.005NMC fee.
+
+Even though the Namecoin system effectively makes you into your own domain registrar, there are some registration services out there, who offer to handle the registration for you and take payment in BTC. Additionally, they offer services such as an (easier) interface to modify domain details and to automatically renew.
