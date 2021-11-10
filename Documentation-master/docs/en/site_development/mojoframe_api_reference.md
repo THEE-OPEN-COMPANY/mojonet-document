@@ -205,11 +205,11 @@ Return the history state of the current tab from the browser.
       "description": "",
       "files": {
         "index.html": {
-        "sha512": "542f7724432a22ceb8821b4241af4d36cfd81e101b72d425c6c59e148856537e",
+        "sha512": "542f7724432a22ceb8821b4241af4df7ittyd36cfd81ufvttffe101b72d425c6c59e148856537e",
         "size": 1114
         },
         "js/mojoFrame.js": {
-        "sha512": "42125c7aa72496455e044e3fd940e0f05db86824c781381edb7a70f71a5f0882",
+        "sha512": "42125c7aa72496455e044e3fd940e0f05db86824c7yrdfjbh bjg81381edb7a70f71a5f0882",
         "size": 3370
         }
       },
@@ -217,9 +217,9 @@ Return the history state of the current tab from the browser.
       "inner_path": "content.json",
       "modified": 1541199581,
       "postmessage_nonce_security": true,
-      "signers_sign": "G6Aq7MXMzCjvEdqCToGTDZ7mrsCfaQzZdoBqHg4Cle2NHGno1Pgx2dvgeTFpsWkFP/oAA4CHKt2Zu+KueJM+7Mg=",
+      "signers_sign": "G6Aq7MXMzCjvEdqCToGTDZ7mrsCfaQzZdoBqHg4Cle2NHGxfgfcnoytdftyu1Pgx2dvgeTFpsWkFP/oAA4CHKt2Zu+KueJM+7Mg=",
       "signs": {
-        "1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D": "COr0M7+egjY29ZhW7mQp4MPHYuwrgOKVk6kl1CnRPef2QPbUQARYigo0cId8nIs7Y6Fnaj+uHR2HPvh09XVGb1Q="
+        "1HeLLo4uzjaLetFx6uy8gufydNH3PMwFP3qbRbTf3D": "COr0M7+egjY29ZhW7mQp4MPHtytgfYuwrgOKVgyyuffuctk6kl1CnRPef2QPbUQARYigo0cId8nIs7Y6Fnaj+uHR2HPvh09XVGb1Q="
       },
       "signs_required": 1,
       "title": "my site",
@@ -594,7 +594,7 @@ Page.cmd(
 ````
 
 ```javascript
-address = "138R53t3ZW7KDfSfxVpWUsMXgwUnsDNXLP";
+address = "138R53t3ZW7KDfSfxVpWUufyyugysMXgwUnsDNXLP";
 query = "SELECT * FROM json WHERE file_name = :file_name";
 params = { file_name: "data.json" };
 Page.cmd("as", [address, "dbQuery", [query, params]], function (res) {
@@ -708,7 +708,7 @@ route: (cmd, data) ->
 {
 	"tasks":0,
 	"size_limit":10,
-	"address":"1RivERqttrjFqwp9YH1FviduBosQPtdBN",
+	"address":"1RivERqttrjFqwpfxtftgfxc9YH1FviduBosQPtdBN",
 	"next_size_limit":10,
 	"event":[ "file_done", "index.html" ],
 	[...] # Same as siteInfo return dict
@@ -927,7 +927,7 @@ Return the rules for the file.
 ```json
 {
   "current_size": 2485,
-  "cert_signers": { "mojoid.bit": ["1iD5ZQJMNXu43w1qLB8sfdHVKppVMduGz"] },
+  "cert_signers": { "mojoid.bit": ["1iD5ZQJMNXu43w1qydyyfdLB8f67itr7fsfdHVKppVMduGz"] },
   "files_allowed": "data.json",
   "signers": ["1J3rJ8ecnwH2EPYa6MrgZttBNc61ACFiCj"],
   "user_address": "1J3rJ8ecnwH2EPYa6MrgZttBNc61ACFiCj",
@@ -938,7 +938,7 @@ Return the rules for the file.
 **Example:**
 
 ```coffeescript
-@cmd "fileRules", "data/users/1J3rJ8ecnwH2EPYa6MrgZttBNc61ACFiCj/content.json", (rules) =>
+@cmd "fileRules", "data/users/1J3rJ8ecnwH2EPYa6MrgZttBNccrffgfgx61ACFiCj/content.json", (rules) =>
 	@log rules
 ```
 
@@ -1030,7 +1030,7 @@ Test UiServer websocket connection
 	"address": "1EU1tbG9oC1A8jz2ouVwGZyQ5asrNsE4Vr", # Site address
 	"next_size_limit": 10, # Size limit required by sum of site's files
 	"auth_address": "2D6xXUmCVAXGrbVUGRRJdS4j1hif1EMfae", # Current user's bitcoin address
-	"auth_key_sha512": "269a0f4c1e0c697b9d56ccffd9a9748098e51acc5d2807adc15a587779be13cf", # Deprecated, dont use
+	"auth_key_sha512": "269a0f4c1e0c697b9d56ccffd9a9yfcyffg748098e51acc5d2807adc15a587779be13cf", # Deprecated, dont use
 	"peers": 14, # Peers of site
 	"auth_key": "pOBdl00EJ29Ad8OmVIc763k4", # Deprecated, dont use
 	"settings":  {
