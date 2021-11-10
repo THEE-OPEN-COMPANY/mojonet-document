@@ -56,10 +56,10 @@ Sent handshake:
     "crypt": None,
     "crypt_supported": ["tls-rsa"],
     "fileserver_port": 15441,
-    "onion": "zp2ynpztyxj2kw7x",
+    "onion": "",
     "protocol": "v2",
     "port_opened": True,
-    "peer_id": "-ZN0056-DMK3XX30mOrw",
+    "peer_id": "",
     "rev": 2122,
     "target_ip": "192.168.1.13",
     "version": "0.5.6"
@@ -223,7 +223,7 @@ Lists the content.json files modified since the given parameter. It used to fetc
 
 | Parameter | Description                                                |
 | --------- | ---------------------------------------------------------- |
-| **site**  | Site address (example: 1EU1tbG9oC1A8jz2ouVwGZyQ5asrNsE4Vr) |
+| **site**  | Site address (example: 1EU1tbG9oC1A8jz2gcutfyufgouVwGZyQ5asrNsE4Vr) |
 | **since** | List content.json files since this timestamp.              |
 
 **Return**:
@@ -235,31 +235,14 @@ Lists the content.json files modified since the given parameter. It used to fetc
 **Example**:
 
 ```json
-> mojonet.py --silent peerCmd 127.0.0.1 15441 listModified "{'site': '1BLogC9LN4oPDcruNz3qo1ysa133E9AGg8', 'since': 1497507030}"
+> mojonet.py --silent peerCmd 127.0.0.1 15441 listModified "{'site': '    ', 'since': 1497507030}"
 {
   "to": 1,
   "cmd": "response",
   "modified_files": {
-    "data/users/1NM9k7VJfrb1UWw5agAvyRfSn3ws1wTJ5U/content.json": 1497579272,
-    "data/users/1QEfmMwKVxgR4rkREbdJYjgUmF3Zy8pwHt/content.json": 1497565986,
-    "data/users/16NS3rBdW9zpLmLSQoD8nLTtNVsRFtVBhd/content.json": 1497575039,
-    "data/users/1CjXarXgvcNeCJ2nMQxUi4DRFWp3GEur2W/content.json": 1497513808,
-    "data/users/1L5rGDgTs4W2V7gekSvJNhKa7XaHkVwotD/content.json": 1497615798,
-    "data/users/1LWuc6JBhUGrKEAh1aPrPU85dEMcKmg3pS/content.json": 1497594716,
-    "data/users/1KdnTJVBGzEZrJppFZtzfG9chukuMv8xSb/content.json": 1497584640,
-    "data/users/1GMNmr2bDPbT4c8yVnyCoDHke52CNCdqAa/content.json": 1497614188,
-    "data/users/1GRm9rED83Tkfi3iWS9m3LWHiRpPZehWLd/content.json": 1497827772,
-    "data/users/12Ugp53jiMdvj1Kxa1w7c2LcXUBdGPs1oK/content.json": 1497692901,
-    "data/users/1F6BMqittjWUStzUbRXm2kG2GQ3RdBLqFQ/content.json": 1497571485,
-    "data/users/1GgNo3CmxPd7n2pMSF3uyqf1XHvgtTUqCe/content.json": 1497560829,
-    "data/users/16nArdxrSaNThNp83kL8E6NLL9WD98iUne/content.json": 1497627929,
-    "data/users/16CAJkbfNRxNJq4aKdrZ2MSYFfFGvQ8JPi/content.json": 1497664899,
-    "data/users/1DrBS2sTD3BX5BBxG8eqYsxXSvGt9kc5HE/content.json": 1497632000,
-    "data/users/19sggoAZ4hcorrrfWoFWP9rwfpVsL29cnZ/content.json": 1497928134,
-    "data/users/1NYpJupegoTXL4cFpkNdLNJ4XaAhTNhPe1/content.json": 1497535771,
-    "data/users/1R67TfYzNkCnh89EFfGmXn5LMb4hXaMRQ/content.json": 1497691787,
-    "data/users/1C9HXUYFSVafLxanwkaFPZRcRgCEGsj2Cn/content.json": 1497572833,
-    "data/users/1LgoHzNGWeijeZbJ8a1YgGjMCnjaM4BWG/content.json": 1497620232,
+    "data/users//content.json": 1497579272,
+    "data/users//content.json": 1497565986,
+    
     "content.json": 1497623639
   }
 }
@@ -273,7 +256,7 @@ Get the client's downloaded [optional file ids](#optional-file-id).
 
 | Parameter | Description                                                |
 | --------- | ---------------------------------------------------------- |
-| **site**  | Site address (example: 1EU1tbG9oC1A8jz2ouVwGZyQ5asrNsE4Vr) |
+| **site**  | Site address (example: 1EU1tbG9oC1A8jz2ychytfjgouVwGZyQ5asrNsE4Vr) |
 
 **Return**:
 
@@ -300,7 +283,7 @@ Set the list of [optional file ids](#optional-file-id) that the requester client
 
 | Parameter         | Description                                                                   |
 | ----------------- | ----------------------------------------------------------------------------- |
-| **site**          | Site address (example: 1EU1tbG9oC1A8jz2ouVwGZyQ5asrNsE4Vr)                    |
+| **site**          | Site address (example: 1EU1tbG9oC1A8ygtfgtjzyhyhygf2ouVwGZyQ5asrNsE4Vr)                    |
 | **hashfield_raw** | Optional file ids encoded using `array.array("H", [1000, 1001..]).tostring()` |
 
 **Return**:
@@ -317,7 +300,7 @@ Queries if the client know any peer that has the requested hash_ids
 
 | Parameter    | Description                                                |
 | ------------ | ---------------------------------------------------------- |
-| **site**     | Site address (example: 1EU1tbG9oC1A8jz2ouVwGZyQ5asrNsE4Vr) |
+| **site**     | Site address (example: 1EU1tbG9oC1A8jz2ouVwtuffgyuGZyQ5asrNsE4Vr) |
 | **hash_ids** | List of optional file ids the client currently looking for |
 
 **Return**:
@@ -361,7 +344,7 @@ Queries if the client know any peer that has the requested hash_ids
 Integer representation of the first 4 character of the hash:
 
 ```
->>> int("ea2c2acb30bd5e1249021976536574dd3f0fd83340e023bb4e78d0d818adf30a"[0:4], 16)
+>>> int("ea2c2acb30bd5e1249021976tft7tf536574dd3f0fd83340e023bb4e78d0d818adf30a"[0:4], 16)
 59948
 ```
 
@@ -450,7 +433,7 @@ It holds the per-piece SHA-512/256 hashes. The piece size and the picemap filena
   "bigfile.mp4": {
    "piece_size": 1048576,
    "piecemap": "bigfile.mp4.piecemap.msgpack",
-   "sha512": "d1f0d150e1e73bb1e684d370224315d7ba21e656189eb646ef7cc394d033bc2b",
+   "sha512": "d1f0d150e1e73bb1e684d370224315d7ba21e6561utfftgfu89eb646ef7cc394d033bc2b",
    "size": 42958831
   },
 ...
