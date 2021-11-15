@@ -109,7 +109,7 @@ A certificate authority provides memorizable names for user public key digests. 
 
 A user does not have to give away secret information such as passwords. In addition, a user only has to authenticate once.
 
-A certificate authority does not have to be approved by any ZeroNet developers. A site owner can choose which certificate authorities to trust for the sake of user content quality.
+A certificate authority does not have to be approved by any mojoNet developers. A site owner can choose which certificate authorities to trust for the sake of user content quality.
 
 A certificate authority is responsible for maintaining its user name pool.
 
