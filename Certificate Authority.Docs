@@ -1,5 +1,5 @@
 Certificate Authority¶
-An account without password? A certificate for me? You realize the ID system of mojoNet does not conform to convention. In this section, you are going to learn about how user certificate and certificate authority work in ZeroNet.
+An account without password? A certificate for me? You realize the ID system of mojoNet does not conform to convention. In this section, you are going to learn about how user certificate and certificate authority work in mojoNet.
 
 What does a certificate authority do?¶
 In mojoNet, everything is signed by Bitcoin signing keys. A certificate provides a unique and memorizable name for a Bitcoin address. A certificate authority (or an ID provider) is responsible for proving the relationship between a unique friendly name and a Bitcoin address.
