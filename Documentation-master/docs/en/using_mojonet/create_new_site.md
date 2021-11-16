@@ -58,4 +58,4 @@ Site:13DNDk..bhC2 Successfuly published to 3 peers
 - That's it! You've successfully signed and published your modifications.
 - Your site will be accessible 
 
-**Next steps:** [mojonet Developer Documentation](../../site_development/getting_started/)
+
